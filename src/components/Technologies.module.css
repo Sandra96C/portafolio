@@ -1,0 +1,48 @@
+#technologies {
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.technologiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 2.5rem;
+  margin-top: 4rem;
+}
+
+.techItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: 0.3s;
+}
+
+.techItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: 0.3s;
+}
+
+.techItem:hover {
+  transform: translateY(-8px);
+}
+
+.techItem img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  transition: 0.3s;
+}
+
+.techItem p {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.techItem:hover img {
+  transform: scale(1.15);
+}
