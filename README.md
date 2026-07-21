@@ -1,16 +1,97 @@
-# React + Vite
+# 🌐 Portfolio - Sandra Colomer
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Portfolio personal desarrollado con React donde muestro mi experiencia como desarrolladora Front-end, los proyectos más relevantes y las tecnologías con las que trabajo.
 
-Currently, two official plugins are available:
+## 🚀 Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tecnologías
 
-## React Compiler
+- React
+- CSS Modules
+- Tailwind CSS
+- React Icons
+- Lucide React
+- Vite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📸 Capturas
 
-## Expanding the Oxlint configuration
+### Inicio
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+![Inicio](./src/assets/readme/home.png)
+
+### Proyectos
+
+![Proyectos](./src/assets/readme/projects.png)
+
+### Tecnologías
+
+![Tecnologías](./src/assets/readme/technologies.png)
+
+## 📂 Estructura del proyecto
+
+```text
+src
+│
+├── assets
+│   ├── profile
+│   ├── projects
+│   └── technologies
+│
+├── components
+│   ├── layout
+│   ├── ui
+│   ├── AboutMe.jsx
+│   ├── Hero.jsx
+│   ├── Projects.jsx
+│   └── Technologies.jsx
+│
+├── Home.jsx
+├── index.css
+└── main.jsx
+```
+
+## ⚙️ Instalación
+
+Clona el repositorio:
+
+```bash
+git clone https://github.com/Sandra96C/portfolio.git
+```
+
+Entra en la carpeta:
+
+```bash
+cd portfolio
+```
+
+Instala las dependencias:
+
+```bash
+npm install
+```
+
+Ejecuta el proyecto:
+
+```bash
+npm run dev
+```
+
+## 📦 Build
+
+```bash
+npm run build
+```
+
+## 👩‍💻 Sobre mí
+
+Soy desarrolladora Web especializada en Angular y TypeScript, actualmente ampliando conocimientos en React y desarrollo Full Stack.
+
+Me apasiona crear aplicaciones modernas, intuitivas y escalables, cuidando tanto la experiencia de usuario como la calidad del código.
+
+## 📫 Contacto
+
+📧 **Email:** 3496sandra@gmail.com
+
+💼 **LinkedIn:** https://linkedin.com/in/TU-USUARIO
+
+💻 **GitHub:** https://github.com/Sandra96C
