@@ -7,9 +7,9 @@ import { Footer } from "./components/layout/Footer.jsx";
 
 export default function Home() {
   return (
-    <div className="main grid gap-5">
-      <section className="heroSection">
-        <Navbar className="navbar" />
+    <div className="grid ">
+      <Navbar />
+      <section className="headerSection">
         <Hero />
       </section>
       <section id="about">

@@ -27,17 +27,9 @@ a {
   color: inherit;
 }
 
-.main {
-  gap: 4rem;
-}
-
 .container-custom {
   width: min(1200px, 90%);
   margin: auto;
-}
-
-.heroSection {
-  background: linear-gradient(135deg, #0b1220, #111827, #0f172a);
 }
 
 .sectionTitle {
@@ -46,4 +38,8 @@ a {
   font-size: 2.8rem;
   font-weight: 700;
   color: #1e293b;
+}
+
+.headerSection {
+  background: linear-gradient(135deg, #0b1220, #111827, #0f172a);
 }

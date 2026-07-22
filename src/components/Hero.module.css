@@ -98,7 +98,6 @@
   border-color: rgba(255, 255, 255, 0.5);
 }
 
-/* --- Imagen --- */
 .heroImage {
   position: relative;
   display: flex;
@@ -144,18 +143,17 @@
 
 @media (min-width: 768px) {
   .heroContainer {
-    min-height: 65vh;
     display: flex;
     align-items: center;
-    padding: 2rem 5rem;
+    padding: 3rem 2rem;
   }
 
   .heroContent {
-    width: min(1200px, 90%);
+    width: min(1200px, 92%);
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5rem;
+    gap: 2.5rem;
     align-items: center;
     text-align: left;
   }
@@ -166,6 +164,40 @@
 
   .heroButtons {
     justify-content: flex-start;
+  }
+
+  .heroDescription {
+    max-width: 480px;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    padding: 0.85rem 1.7rem;
+  }
+
+  .heroImage img {
+    width: 260px;
+  }
+
+  .heroImage::before {
+    width: 270px;
+    height: 270px;
+  }
+
+  .heroTitle {
+    font-size: clamp(1.9rem, 5vw, 4.2rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroContainer {
+    min-height: 20vh;
+    padding: 2rem 5rem;
+  }
+
+  .heroContent {
+    width: min(1200px, 90%);
+    gap: 5rem;
   }
 
   .heroDescription {
@@ -187,7 +219,6 @@
   }
 }
 
-/* Respeta a quien prefiere menos movimiento */
 @media (prefers-reduced-motion: reduce) {
   .heroText > *,
   .heroImage {
