@@ -5,42 +5,182 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  backdrop-filter: blur(10px);
-  padding: 1.3rem 5rem;
+  padding: 0.9rem 1.2rem;
+  background: rgba(10, 10, 15, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(124, 58, 237, 0.15);
+}
+
+.navbarBrand {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
 }
 
 .navbarLogo {
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 700;
+  margin: 0;
+  transition: color 0.3s ease;
 }
 
 .navbarSubtitle {
-  color: #6d28d9;
-  font-weight: 700;
+  color: #a78bfa;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
 }
 
+/* Botón hamburguesa (solo móvil) */
+.menuButton {
+  display: block;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.4rem;
+  border-radius: 8px;
+  transition: background-color 0.25s ease;
+}
+
+.menuButton:hover {
+  background-color: rgba(124, 58, 237, 0.15);
+}
+
+.iconWrapper {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.hamburgerIcon,
+.closeIcon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  transition:
+    transform 0.35s ease,
+    opacity 0.25s ease;
+}
+
+.hamburgerIcon {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+.closeIcon {
+  opacity: 0;
+  transform: rotate(-90deg) scale(0.5);
+}
+
+.iconOpen .hamburgerIcon {
+  opacity: 0;
+  transform: rotate(90deg) scale(0.5);
+}
+
+.iconOpen .closeIcon {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+/* Menú desplegable en móvil */
 .navbar {
-  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(10, 10, 15, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(124, 58, 237, 0.15);
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition:
+    max-height 0.35s ease,
+    opacity 0.25s ease,
+    transform 0.3s ease;
+}
+
+.navbarOpen {
+  max-height: 400px;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .navbarLinks {
   display: flex;
-  gap: 3rem;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.1rem;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 1.5rem 1rem;
 }
 
 .navbarLinks a {
+  position: relative;
+  display: inline-block;
   color: white;
   font-size: 16px;
   font-weight: 500;
-  transition: 0.3s;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbarLinks a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #7c3aed;
+  transition: width 0.3s ease;
 }
 
 .navbarLinks a:hover {
-  text-decoration: underline;
-  text-decoration-color: #7c3aed;
-  left: 0;
+  color: #c4b5fd;
+}
+
+.navbarLinks a:hover::after {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .navbarContainer {
+    padding: 1.3rem 5rem;
+  }
+
+  .navbarLogo {
+    font-size: 1.4rem;
+  }
+
+  .navbarSubtitle {
+    font-size: 0.9rem;
+  }
+
+  .menuButton {
+    display: none;
+  }
+
+  .navbar {
+    position: static;
+    max-height: none;
+    opacity: 1;
+    transform: none;
+    background: transparent;
+    border: none;
+    backdrop-filter: none;
+    overflow: visible;
+  }
+
+  .navbarLinks {
+    flex-direction: row;
+    gap: 3rem;
+    padding: 0;
+  }
 }

@@ -7,12 +7,11 @@ export function Projects() {
   const projects = [
     {
       img: lyndayImg,
-      url: "https://frontend-lynday-okwi.vercel.app/admin/",
+      // url: "https://frontend-lynday-okwi.vercel.app/admin/",
       title: "CRUD MERN",
       description:
         "Aplicación fullstack para la gestión de tareas con autenticación JWT y operaciones CRUD.",
       tech: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
-      github: "https://github.com/Sandra96C/backend-products",
     },
     {
       img: talleresRiberoImg,
@@ -21,7 +20,6 @@ export function Projects() {
       description:
         "Sitio web corporativo desarrollado con Astro. Diseño responsive y optimizado para SEO.",
       tech: ["Astro", "HTML", "CSS"],
-      github: "https://github.com/Sandra96C/taller-ribero",
     },
     {
       title: "Dashboard interno",
@@ -36,6 +34,7 @@ export function Projects() {
       tech: ["Angular", "TypeScript", "RxJS", "Bootstrap", "Symfony"],
     },
   ];
+
   return (
     <div id="projects" className={styles.projectsSection}>
       <div className="sectionTitle">

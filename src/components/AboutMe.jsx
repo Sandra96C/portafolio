@@ -6,7 +6,6 @@ export function AboutMe() {
   const experiences = [
     {
       icon: CodeXml,
-
       title: "Desarrollo Frontend",
       description:
         "Experiencia con Angular, TypeScript, JavaScript, React HTML y CSS.",
@@ -30,6 +29,7 @@ export function AboutMe() {
         "Siempre estoy aprendiendo nuevas tecnologías para seguir creciendo.",
     },
   ];
+
   return (
     <div id="aboutMe" className={styles.aboutMe}>
       <div className={styles.aboutContent}>
@@ -42,13 +42,15 @@ export function AboutMe() {
         </p>
       </div>
       <div className={styles.aboutGrid}>
-        {experiences.map((exp, index) => {
-          return (
-            <div key={index}>
-              <Card experience={exp} />
-            </div>
-          );
-        })}
+        {experiences.map((exp, index) => (
+          <div
+            key={index}
+            className={styles.cardWrapper}
+            style={{ "--i": index }}
+          >
+            <Card experience={exp} />
+          </div>
+        ))}
       </div>
     </div>
   );

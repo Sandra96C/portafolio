@@ -4,8 +4,6 @@ import {
   FaPhoneAlt,
   FaMapMarkerAlt,
 } from "react-icons/fa";
-import { IoMdMail } from "react-icons/io";
-import { IoIosMail } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import styles from "./Footer.module.css";
 
@@ -27,65 +25,66 @@ export function Footer() {
               href="https://github.com/Sandra96C"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub"
             >
-              <FaGithub size={24} />
+              <FaGithub size={20} />
             </a>
             <a
               href="https://www.linkedin.com/in/sandra-colomer-castello/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn"
             >
-              <FaLinkedin size={24} />
+              <FaLinkedin size={20} />
             </a>
+            <a href="mailto:3496sandra@gmail.com" aria-label="Email">
+              <MdEmail size={20} />
+            </a>
+          </div>
+        </section>
+
+        <section className={styles.footerContact} id="contact">
+          <div className={styles.footerHeading}>Contacto</div>
+          <div className={styles.footerContactList}>
+            <a href="mailto:3496sandra@gmail.com">
+              <MdEmail size={18} /> 3496sandra@gmail.com
+            </a>
+            <a href="tel:+34652515170">
+              <FaPhoneAlt size={16} /> +34 652 515 170
+            </a>
+            <span>
+              <FaMapMarkerAlt size={18} /> Valencia, España
+            </span>
             <a
-              href="mailto:3496sandra@gmail.com"
+              href="https://www.linkedin.com/in/sandra-colomer-castello/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <MdEmail size={24} />
+              <FaLinkedin size={18} /> LinkedIn
             </a>
           </div>
         </section>
+
         <section className={styles.footerLinks}>
-          <div className="font-semibold">Enlaces</div>
-          <div>
-            <ul>
-              <li>
-                <a href="#about-me">Sobre mí</a>
-              </li>
-              <li>
-                <a href="#projects">Proyectos</a>
-              </li>
-              <li>
-                <a href="#technologies">Tecnologías</a>
-              </li>
-              <li>
-                <a href="#contact">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section className={styles.footerContact}>
-          <div id="contact" className="font-semibold">
-            Contacto
-          </div>
-          <div>
-            <p className="flex items-center gap-2">
-              <MdEmail size={18} /> 3496sandra@gmail.com
-            </p>
-            <p className="flex items-center gap-2">
-              <FaPhoneAlt size={18} /> +34 652 515 170
-            </p>
-            <p className="flex items-center gap-2">
-              <FaMapMarkerAlt size={18} /> Valencia, España
-            </p>
-            <p className="flex items-center gap-2">
-              <FaLinkedin size={18} /> LinkedIn
-            </p>
-          </div>
+          <div className={styles.footerHeading}>Enlaces</div>
+          <ul>
+            <li>
+              <a href="#about">Sobre mí</a>
+            </li>
+            <li>
+              <a href="#projects">Proyectos</a>
+            </li>
+            <li>
+              <a href="#technologies">Tecnologías</a>
+            </li>
+            <li>
+              <a href="#contact">Contacto</a>
+            </li>
+          </ul>
         </section>
       </div>
-      <div className="text-center mt-8">
+
+      <div className={styles.footerBottom}>
         <p>&copy; 2026 Sandra Colomer. Todos los derechos reservados.</p>
       </div>
     </footer>
