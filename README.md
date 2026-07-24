@@ -2,7 +2,7 @@
 
 Portfolio personal desarrollado con React donde muestro mi experiencia como desarrolladora Frontend, los proyectos más relevantes y las tecnologías con las que trabajo.
 
-🔗 **Demo en vivo:** [portafoliosandra-eight-chi-21.vercel.app](https://portafoliosandra-eight-chi-21.vercel.app/)
+🔗 **Demo en vivo:** [sandra-colomer.vercel.app](https://sandra-colomer.vercel.app/)
 
 ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
