@@ -11,7 +11,7 @@ export function Hero() {
           <h1 className={styles.heroTitle}>
             <span>Sandra Colomer</span>
             <br />
-            Desarrolladora Front-end
+            Desarrolladora Web
           </h1>
 
           <p className={styles.heroDescription}>

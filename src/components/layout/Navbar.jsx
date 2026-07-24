@@ -11,7 +11,7 @@ export function Navbar() {
     <div className={`navbar ${styles.navbarContainer}`}>
       <div className={styles.navbarBrand}>
         <h2 className={styles.navbarLogo}>Sandra Colomer</h2>
-        <span className={styles.navbarSubtitle}>Frontend Developer</span>
+        <span className={styles.navbarSubtitle}>Web Developer</span>
       </div>
 
       <button
